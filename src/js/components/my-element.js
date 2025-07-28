@@ -41,7 +41,8 @@ class MyElement extends LitElement {
   shouldUpdate(_changedProperties) {
     console.log('shouldUpdate');
     console.log(_changedProperties);
-    return super.shouldUpdate(_changedProperties);
+    // return super.shouldUpdate(_changedProperties);
+    return _changedProperties.has('age');
   }
 
   willUpdate(_changedProperties) {
